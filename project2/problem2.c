@@ -4,16 +4,18 @@
 /then returns the newly created integer.
 /author: Christian Miljkovic - 04/3/17
 */
-int problem2(int x) {
+int problem2(int x) 
+{
 
-	int temp; 
-
+	int temp,a; 
+	printf("Enter a number");
+	scanf("%d",&a);
 	//make sure to hold the digits that you want to swap
-	temp = (x>>4);
+	temp = (x>>a);
 
 	//push off the digits that you already have
 	//by shifting the original digit then add the buffer variable
-	x = (x<<4) + temp;
+	x = (x<<a) + temp;
 
 	return x;
 
